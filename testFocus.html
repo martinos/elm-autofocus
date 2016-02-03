@@ -6,32 +6,31 @@
   </head>
 
   <body>
-    <h1>Stamper</h1>
-    <div id="stamper" style="width:50%; height:400px;"></div>
+    <div id="testApp" style="width:50%; height:400px;"></div>
   </body>
 
   <script type="text/javascript">
-    var stamperDiv = document.getElementById('stamper');
+    var stamperDiv = document.getElementById('testApp');
     Elm.embed(Elm.TestFocus, stamperDiv);
   </script>
-    <script>
-var observer = new MutationObserver(function(mutations) {
-  mutations.forEach(function(mutation) {
-    console.log("Mutation:");
-    console.log(mutation);
-    handleAutofocus(mutation.target);
-  });
-});
-var target = document.querySelector('body > div');
-var config = { subtree: true, attributes: true, childList: true, characterData: true }
-observer.observe(target, config);
+  <script>
+    var observer = new MutationObserver(function(mutations) {
+      mutations.forEach(function(mutation) {
+        console.log("Mutation:");
+        console.log(mutation);
+        handleAutofocus(mutation.target);
+      });
+    });
+    var target = document.querySelector('body > div');
+    var config = { subtree: true, attributes: true, childList: true, characterData: true }
+    observer.observe(target, config);
 
-function handleAutofocus(node) {
-    if (node instanceof Element && node.hasAttribute('autofocus') ) {
-      node.focus();
-    } else {
-     //  handleAutofocus(node.childNodes);
+    function handleAutofocus(node) {
+        if (node instanceof Element && node.hasAttribute('autofocus') ) {
+          node.focus();
+        } else {
+         //  handleAutofocus(node.childNodes);
+        }
     }
-}
     </script>
 </html>
