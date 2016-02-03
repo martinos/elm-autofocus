@@ -6,13 +6,6 @@ import Html.Events exposing (..)
 import StartApp.Simple as StartApp
 
 
-focusAttr focus =
-  if focus then
-    [ attribute "data-autofocus" "" ]
-  else
-    []
-
-
 model =
   { input1 = False, input2 = True }
 
