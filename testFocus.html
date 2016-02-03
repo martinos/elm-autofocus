@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Embedding Elm in HTML!</title>
+    <title>elm-autofocus</title>
     <script type="text/javascript" src="elm.js">
       </script>
   </head>
@@ -10,8 +10,8 @@
   </body>
 
   <script type="text/javascript">
-    var stamperDiv = document.getElementById('testApp');
-    Elm.embed(Elm.TestFocus, stamperDiv);
+    var appDiv = document.getElementById('testApp');
+    Elm.embed(Elm.TestFocus, appDiv);
   </script>
   <script>
     var observer = new MutationObserver(function(mutations) {
