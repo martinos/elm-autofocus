@@ -40,7 +40,7 @@ update action model =
       model
 
     FocusOnOne ->
-      { model | input1 = True, input2 = False } |> Debug.log "coucouu"
+      { model | input1 = True, input2 = False }
 
     FocusOnTwo ->
       { model | input1 = False, input2 = True }
