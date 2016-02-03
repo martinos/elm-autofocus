@@ -13,4 +13,4 @@ If you want to try it:
     elm reactor
     # Open testFocus.htmlm in your browser
 
-Open your browser: http://localhost:8000/testFocus.html
+Open your browser: [http://localhost:8000/testFocus.html](http://localhost:8000/testFocus.html)
