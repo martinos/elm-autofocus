@@ -1,6 +1,7 @@
-# elm-focus
+# elm-autofocus
 
-This is a example app to show one way of changing the focus from one input field to another.
+A sample app to test one approach to change the focus on ui elements.
+
 
 ## Install
 
