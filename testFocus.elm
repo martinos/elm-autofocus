@@ -17,10 +17,6 @@ model =
   { input1 = False, input2 = True }
 
 
-
--- main = view 1 1
-
-
 main =
   StartApp.start
     { model = model
